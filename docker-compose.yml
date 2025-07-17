@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  translator-bot:
+    build: .
+    container_name: telegram_translator
+    env_file:
+      - .env
+    restart: unless-stopped
